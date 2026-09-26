@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Expense Tracker</h1>
+
+        <!-- Expense Form -->
+        <form id="expenseForm">
+
+            <div class="form-group">
+                <label for="expenseName">Expense Name</label>
+                <input
+                    type="text"
+                    id="expenseName"
+                    placeholder="e.g. McDonald's"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="expenseAmount">Amount</label>
+                <input
+                    type="number"
+                    id="expenseAmount"
+                    placeholder="e.g. 12.50"
+                    step="0.01"
+                    min="0.01"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="expenseCategory">Category</label>
+                <select id="expenseCategory" required>
+                    <option value="">Select Category</option>
+                    <option value="Food">Food</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Bills">Bills</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="expenseDate">Date</label>
+                <input
+                    type="date"
+                    id="expenseDate"
+                    required
+                >
+            </div>
+
+            <button type="submit" id="addExpense">
+                Add Expense
+            </button>
+
+        </form>
+
+        <!-- Expense List -->
+        <div class="expenses-section">
+
+            <h2>Expenses</h2>
+
+            <div id="expenseList">
+                <p class="empty-message">No expenses yet.</p>
+            </div>
+
+        </div>
+
+        <!-- Total -->
+        <div class="total-section">
+            <h2>
+                Total:
+                $<span id="totalExpenses">0.00</span>
+            </h2>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
