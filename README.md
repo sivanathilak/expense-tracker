@@ -2,6 +2,10 @@
 
 A simple responsive expense tracker built with HTML, CSS, and JavaScript.
 
+## Screenshot
+
+![Expense Tracker Screenshot](expense-tracker-screenshot.png)
+
 ## Features
 
 - Add expenses
