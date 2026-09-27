@@ -1,5 +1,9 @@
 # Expense Tracker
 
+## Live Demo
+
+[View the Expense Tracker](https://sivanathilak.github.io/expense-tracker/)
+
 A simple responsive expense tracker built with HTML, CSS, and JavaScript.
 
 ## Screenshot
